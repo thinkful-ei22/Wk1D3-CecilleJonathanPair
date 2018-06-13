@@ -1,22 +1,35 @@
-function createMyObject() {
-  return {
-    foo: 'bar',
-    answerToUniverse: 42,
-    ollyolly: 'oxen free',
-    sayHello: function() {
-      return 'hello';
+// function createMyObject() {
+//   return {
+//     foo: 'bar',
+//     answerToUniverse: 42,
+//     ollyolly: 'oxen free',
+//     sayHello: function() {
+//       return 'hello';
+//     }
+//   };
+// }
+//
+//
+// console.log(createMyObject());
+//
+//
+// function updateObject(obj) {
+//   obj.foo = 'foo';
+//   obj.bar = 'bar';
+//   obj.bizz = 'bizz';
+//   obj.bang = 'bang';
+//   return obj;
+// }
+
+function personMaker() {
+  var person = {
+    firstName: 'Paul',
+    lastName: 'Jones',
+    // replace `null` with a function that uses self reference to return
+    // full name
+    fullName: function() {
+      return `${this.firstName} ${this.lastName}`;
     }
   };
-}
-
-
-console.log(createMyObject());
-
-
-function updateObject(obj) {
-  obj.foo = 'foo';
-  obj.bar = 'bar';
-  obj.bizz = 'bizz';
-  obj.bang = 'bang';
-  return obj;
+  return person;
 }
