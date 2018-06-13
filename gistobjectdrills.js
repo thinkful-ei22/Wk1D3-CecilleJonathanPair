@@ -10,20 +10,26 @@
 // console.log(loaf.flour, loaf.water);
 // console.log(loaf.hydration());
 
-/* 
+/*
 Create an object with five properties: foo, bar, fum, quux, and spam. Give each property a unique value of your choosing.
 Loop over the object using for ... in
 Use console.log to show each property name and its associated value.
 */
 
-let obj = {
-  foo: 'foo',
-  bar: 'bar',
-  fum: 'fum',
-  quux: 'quux',
-  spam: 'spam'
-};
+// let obj = {
+//   foo: 'foo',
+//   bar: 'bar',
+//   fum: 'fum',
+//   quux: 'quux',
+//   spam: 'spam'
+// };
+//
+// for (let key in obj) {
+//   console.log(obj);
+// }
 
-for (let key in obj) {
-  console.log(obj);
+let meals = {
+  meal: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
 }
+
+console.log(meals.meal[3]);
