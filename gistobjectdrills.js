@@ -38,23 +38,13 @@ Use console.log to show each property name and its associated value.
 // Store these objects in an array.
 // Iterate over the array and use console.log to show each person's job title and name.
 
-const firstObj = {
-  name: 'Jon',
-  jobTitle: 'Superhero'
-};
+const workers = [
+  {name: 'Jon', job_title: "superhero"},
+  {name: 'Bob', job_title: 'builder'},
+  {name: 'Jane', job_title: 'Chef'},
+];
 
-const secObj = {
-  name: 'Bob',
-  jobTitle: 'builder'
-};
-
-const thirdObj = {
-  name: 'Jane',
-  jobTitle: 'chef'
-};
-
-const myArray = [firstObj, secObj, thirdObj];
-
-for (const key in myArray) {
-  console.log(myArray[key]);
+for (let i = 0; i < workers.length; i++) {
+  const person = workers[i];
+  console.log(person.name, person.job_title);
 }
