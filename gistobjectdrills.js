@@ -25,11 +25,36 @@ Use console.log to show each property name and its associated value.
 // };
 //
 // for (let key in obj) {
-//   console.log(obj);
+//   console.log(obj[key]);
 // }
 
-let meals = {
-  meal: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
-}
+// let meals = {
+//   meal: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+// }
 
-console.log(meals.meal[3]);
+// console.log(meals.meal[3]);
+
+// Create 3-5 objects, each with a name and a jobTitle. Use people you know, or characters from fiction, or your own inventions.
+// Store these objects in an array.
+// Iterate over the array and use console.log to show each person's job title and name.
+
+const firstObj = {
+  name: 'Jon',
+  jobTitle: 'Superhero'
+};
+
+const secObj = {
+  name: 'Bob',
+  jobTitle: 'builder'
+};
+
+const thirdObj = {
+  name: 'Jane',
+  jobTitle: 'chef'
+};
+
+const myArray = [firstObj, secObj, thirdObj];
+
+for (const key in myArray) {
+  console.log(myArray[key]);
+}
