@@ -38,14 +38,18 @@ Use console.log to show each property name and its associated value.
 // Store these objects in an array.
 // Iterate over the array and use console.log to show each person's job title and name.
 
-
 const workers = [
   {name: 'Jon', job_title: "superhero"},
-  {name: 'Bob', job_title: 'builder'},
-  {name: 'Jane', job_title: 'Chef'},
+  {name: 'Bob', job_title: 'builder', boss: 'Jon'},
+  {name: 'Jane', job_title: 'Chef', boss: 'Jon'},
 ];
 
 for (let i = 0; i < workers.length; i++) {
   const person = workers[i];
-  console.log(person.name, person.job_title);
+  if (!person.boss) {
+    console.log(`${person.name} ${person.job_title} doesn't report to anybody`)
+  }
+  if (person.boss) {
+    console.log(`${person.name} ${person.job_title} reports to ${person.boss}.`);
+  }
 }
