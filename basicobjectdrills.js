@@ -76,6 +76,8 @@
 //   });
 // }
 
+'use strict'
+
 const scratchData = [
   { id: 22, foo: 'bar' },
   { id: 28, foo: 'bizz' },

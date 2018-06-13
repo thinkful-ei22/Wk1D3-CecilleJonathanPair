@@ -1,10 +1,29 @@
-const loaf = {
-  flour: 300,
-  water: 210,
-  hydration: function() {
-    return (this.water / this.flour)  * 100;
-  }
-}
+'use strict'
+// const loaf = {
+//   flour: 300,
+//   water: 210,
+//   hydration: function() {
+//     return (this.water / this.flour)  * 100;
+//   }
+// }
 
-console.log(loaf.flour, loaf.water);
-console.log(loaf.hydration());
+// console.log(loaf.flour, loaf.water);
+// console.log(loaf.hydration());
+
+/* 
+Create an object with five properties: foo, bar, fum, quux, and spam. Give each property a unique value of your choosing.
+Loop over the object using for ... in
+Use console.log to show each property name and its associated value.
+*/
+
+let obj = {
+  foo: 'foo',
+  bar: 'bar',
+  fum: 'fum',
+  quux: 'quux',
+  spam: 'spam'
+};
+
+for (let key in obj) {
+  console.log(obj);
+}
